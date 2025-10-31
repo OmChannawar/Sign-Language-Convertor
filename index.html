@@ -1,52 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+
+  <!DOCTYPE html>
+  <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SignScribe - Sign Language to Text Converter</title>
-        <link rel="stylesheet" href="styles.css">
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>ISL Bridge Website Design</title>
     </head>
 
-    <body class="page">
-
-        <div class="container">
-            <header class="header">
-                <h1 class="title">SignScribe</h1>
-                <p class="subtitle">Real-time Sign Language to Text Conversion</p>
-            </header>
-
-            <main class="video-container">
-                <video id="video-feed" autoplay playsinline></video>
-                <div id="placeholder" class="placeholder">
-                    <p>Initializing Camera...</p>
-                </div>
-            </main>
-
-            <div class="control-bar">
-                <div id="output-text" class="output-box">
-                    <span id="converted-text">The converted text will appear here...</span>
-                </div>
-
-                <button id="toggle-camera-button" class="button button-primary">
-                    <!-- Camera Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v10m-5.657-3.343a8 8 0 1111.314 0" />
-                    </svg>
-                </button>
-
-                <button id="scan-button" class="button button-primary" disabled>
-                    <!-- Scan Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-
-        <script src="script.js"></script>
+    <body>
+      <div id="root"></div>
+      <script type="module" src="/src/main.tsx"></script>
     </body>
-</html>
+  </html>
+  
